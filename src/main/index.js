@@ -18,9 +18,14 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 563,
+    width: 660,
+    minWidth: 660,
+    height: 450,
+    minHeight: 420,
     useContentSize: true,
-    width: 1000,
+    frame: false,
+    center: true,
+    title: 'System shutdown',
   });
 
   mainWindow.loadURL(winURL);
